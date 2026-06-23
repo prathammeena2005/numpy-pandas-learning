@@ -1,0 +1,15 @@
+import numpy as np
+
+arr = np.array([[10, 20], [30, 40]])
+print('Sum =', np.sum(arr))
+print('Mean =', np.mean(arr))
+print('Median =', np.median(arr))
+print('Standard Deviation =', np.std(arr))
+print('Variance =', np.var(arr))
+print('Minimum element =', np.min(arr))
+print('Maximum element =', np.max(arr))
+print('Sum along axis 1 =', np.sum(arr, axis=1))
+print('Cumulative sum =', np.cumsum(arr))
+print('Cumulative product =', np.cumprod(arr))
+print('Elements greater than 25 =', np.where(arr > 25, 'Greater than 25', 'Less than or equal to 25'))
+print('Indices of elements greater than 25 =', np.argwhere(arr > 25))
